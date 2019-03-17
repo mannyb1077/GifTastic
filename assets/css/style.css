@@ -1,0 +1,82 @@
+body
+{
+    background: black;
+    color: Silver;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.carButtons
+{
+    background: teal;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-right: 15px;
+    
+}
+
+.carButtons:hover
+{
+    background: rgb(7, 241, 46);
+    color: yellow;
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-right: 15px;
+    border-color: yellow;
+    
+}
+
+#submitButton:hover
+{
+    background: blue;
+    color: yellow;
+    border-color: yellow;
+}
+
+label
+{
+    color: red;
+}
+#search-input-box
+{
+    height: 15px;
+    width: 300px;
+    
+    padding: 5px;
+}
+#submitButton
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+#buttonsArea
+{
+    margin: 5px;
+}
+
+.carImages
+{
+    width: 400px;
+    height: 250px;
+}
+
+p
+{
+    font-size: 25px;
+    margin: 2px;
+    /* width: 400px; */
+   
+}
+
+
+
+
