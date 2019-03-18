@@ -11,7 +11,6 @@ function populateCarButtons(cars, classToAdd, areaToAddTo)
 {
     $(areaToAddTo).empty();
     
-    
     for (var i = 0; i < cars.length; i++)
     {
         var a = $('<button>');
@@ -87,9 +86,21 @@ $(document).on("click",".carImages",function()
 $("#submitButton").on("click", function()
 {
     var newCars = $("input").eq(0).val();
-    cars.push(newCars);
-    populateCarButtons(cars, "carButtons", "#buttonsArea");
+    // cars.push(newCars);
+    // console.log("New Cars = " + newCars);
+    // populateCarButtons(cars, "carButtons", "#buttonsArea");
     //console.log(cars);
+    if (newCars != "")
+    {
+        cars.push(newCars);
+        console.log("New Cars = " + newCars);
+        populateCarButtons(cars, "carButtons", "#buttonsArea");
+    }
+    else
+    {
+        alert("Ooops! You forgot to type in you Favorite Car. Please try again."); 
+    }
+    
     return false;
     
     //$("#search-input-box").empty();
