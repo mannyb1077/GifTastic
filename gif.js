@@ -29,7 +29,7 @@ $(document).on('click', ".carButtons", function()
     var queryURL = 'https://api.giphy.com/v1/gifs/search?q='+type+'&api_key=' + apiKey + '&limit=10'
     
 
-    $("#carsDisplay").empty();
+   $("#carsDisplay").empty();
 
     $.ajax({url:queryURL,method:'GET'})
         .done(function(response)
@@ -74,12 +74,12 @@ $(document).on("click",".carImages",function()
         
     }
     else
-    {
-        
+    { 
         $(this).attr("src", $(this).data("still"));
         $(this).attr("data-state","still");
         
     }
+    state = $(this).attr("data-state");
     console.log("State var = " + state);
 })
 
